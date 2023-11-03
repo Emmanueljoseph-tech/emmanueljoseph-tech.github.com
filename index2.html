@@ -1,0 +1,556 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="/assets/icons/icon.png">
+    <title>henJO Code Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        #hidden{
+    display:none;
+}
+    </style>
+</head>
+<body>
+   <!--nav bar-->
+        <nav class="navbar navbar-expand-md fixed-top">
+           <div class="container-xl">
+            <a href="#" class="navbar-brand">
+                <span class="container-lg">    
+                    <img src="assets/icons/henjo_logo_icon.png" alt="logo" class="logo_big">  
+                </span>
+            </a>
+            <!--toggle button for mobile navbar-->
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon " style="background-color: white; border-radius:3px;"><i class="bi bi-hamburger"></i></span>
+            </button>
+            <!--navbarlink-->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+                <ul class="navbar-nav ">
+        
+                    <li class="nav-item ">
+                       <a href="#" class="nav-link text-light">henJO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link text-light">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link text-light">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-light">Get In Touch</a>
+                    </li>
+                    
+                    <li class="nav-item  d-md-none">
+                        <a href="#pricing" class="nav-link text-light">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#pricing" class=" btn btn-secondary btn-sm" >buy now</a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+        </nav>
+   <!--main image & intro-->
+   <section id="intro" class="text-light mt-5">
+    <div class="container-lg" id="intro-container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="diplay-2 big-head">Pro-Coding Course</div>
+                    <div class="display-5 text-light">Gain Pro Coding Skills</div>
+                
+                </h1>
+                <p class="lead off-white my-6">Learn from the best, build your coding skill and code like a pro.
+                </p>
+                <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img class="img-fluid" src="assets/images/henjo_laptop-removebg-preview.png" alt="laptop">
+            </div> 
+        </div>
+    </div>
+   </section>
+
+   <!--pricing plan-->
+   <section id="pricing" class="text-light ">
+    <div class="container-lg">
+        <div class="">
+            <p class="pcp" style="font-size:25px; font-weight: bold;"><i style="color:red;" class="bi bi-star-fill mx-2"></i>Popular Course Prices <span class="lead off-white d-none d-md-inline " style="margin-left:38%;">
+                Check out courses that suites your budget<i style="color:green;" class="bi bi-heart-fill mx-2 "></i>
+            </span></p>
+            
+            <hr>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center g-5">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4" style="background-color: rgb(40, 39, 39)">
+                        <h4 class="card-title text-light">Starter Edition</h4>
+                        <p class="card-subtitle" style="color: rgb(194, 174, 147);">HTML & CSS only</p>
+                        <p class="price fw-bold display-5 my-4">
+                            $45.99
+                        </p>
+                        <p class="card-text mx-5 d-none d-lg-block text-secondary">
+                            Learn the basics in building a beautiful and responsive UI for all kinds of websites and web-apps. Start from the scratch. 
+                        </p>
+                        <a href="#" class="btn btn-outline-primary golden btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 col-lg-4">
+                <div class="card mostWanted border-2">
+                    <div class="card-header text-dark text-center text-b" >
+                        Most Popular
+                    </div>
+                    <div class="card-body text-center py-5" style="background-color: rgb(40, 39, 39)">
+                        <h4 class="card-title text-light">Complete Edition</h4>
+                        <p class="card-subtitle lead" style="color: rgb(194, 174, 147);">Frontend Frameworks & mores</p>
+                        <p class="display-4 my-4 price fw-bold"> $129.99</p>
+                        <p class="card-text mx-5 text-secondary d-none d-lg-block">Perform more task with limited time, learn the best frameworks for frontend devs: Bootstrap, Thailwind,and react-js.</p>
+                        <a href="#" class="btn btn-outline-primary golden btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4" style="background-color: rgb(40, 39, 39)">
+                        <h4 class="card-title text-light">Advanced Edition</h4>
+                        <p class="card-subtitle" style="color: rgb(194, 174, 147);">HTML, CSS & Javascript</p>
+                        <p class="price fw-bold display-5 my-4">
+                            $89.99
+                        </p>
+                        <p class="card-text mx-5 d-none d-lg-block text-secondary">
+                            Don't stop at what you already know. Dive deeper with JavaScript to build more professional websites. Click the button Now… 
+                        </p>
+                        <a href="#" class="btn btn-outline-primary golden btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   </section>
+
+   <!--topics at a glance-->
+   <section id="topics">
+        <div class="container-md">
+            <div class="text-center">
+                <h2 class="text-light big-head">Inside the course...</h2>
+                <p class="lead off-white">
+                   A quick glance at what you will learn
+                </p>
+            </div>
+             <!--Big Card or thumbnail-->
+             <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-12 col-lg-6">
+                    
+                   <a href="#" class="myCard_a"> <div class="myCard">
+                        <img src="assets/images/henjo thumbnail 1.png" class="card-img-top" alt="..."><hr style="color: aliceblue;">
+                        <div class="myCard_body">
+                            <h3 class="myCard_title">Pro Coding Course</h3>
+                            <p class="myCard_p">Unearth the tools and techniques to truly code like a seasoned pro and fastrack your career.</p>
+                            <div class="spaced">
+                                <div class="myCard_button">
+                                    <button type="button" href="#" class="my-btn btn btn-lg justify-content-start">View Courses</button>
+                                 </div> 
+                                 <div class="myCard_button">
+                                    <button type="button" href="#" class="my-btn2 justify-content-start">Subscribe</button>
+                                 </div>    
+                                    
+                             </div>
+                        </div>
+                    </div></a>
+                      
+                      
+                </div>
+
+               
+                <div class=" col-12 col-lg-6 ">
+                    <a href="#" class="myCard_a"><div class="myCard">
+                        <img src="assets/images/henjo thumbnail 2.png" class="card-img-top" alt="..."><hr style="color: aliceblue;">
+                        <div class="myCard_body">
+                            <h3 class="myCard_title">Web Dev [masterclass]</h3>
+                            <p class="myCard_p">Discover the art of web development and design sites. One course got you covered</p>
+                            <div class="spaced">
+                                <div class="myCard_button">
+                                    <button type="button" href="#" class="my-btn btn btn-lg justify-content-start">View Courses</button>
+                                 </div> 
+                                 <div class="myCard_button">
+                                    <button type="button" href="#" class="my-btn2 justify-content-start">Subscribe</button>
+                                 </div>   
+                                    
+                             </div>
+                            </div>
+                            
+                        </div></a>
+                    </div>
+                   
+                        <a href="#sidebar" class="btn btn-lg btn-secondary" style="width:120px;" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">More</a>
+                    
+                
+            </div>
+             </div>
+        </div>
+   </section>
+
+   <!--reviews list-->
+<!--Using the list group utility-->
+
+<section id="reviews" class="review-block">
+    <div class="container-lg">
+       <div class="text-center">
+        <h2 class="text-light"><i class="bi bi-stars " ></i>Reviews</h2>
+        <p class="lead off-white">What our students are saying about our courses</p>
+       </div>
+       <div class="row justify-content-center my-5 ">
+        <div class="col-10 col-lg-4 mt-3">
+            <div class="list-group">
+                <div class="list-group-item py-3 icon-block">
+                    <img src="assets/icons/person-icon.png" alt="person" class="icon-img">
+                    <div class="pb-2 icon-rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h5 class="mb-1">&quot;Henjo code Academy, my first Love as long as I remain a Dev <i style="color:rgb(0, 255, 21)" class="bi bi-heart-fill"></i>&quot;</h5>
+                    <p>Having trained at 'Henjo Code Academy,' it's no surprise it's my first love. Their profound impact ensures I'll cherish them as long as I remain a Dev</p>
+                    <small class="off-white">Review by Melody Okah</small>
+                </div>
+        </div>
+       </div>
+       <div class="col-10 col-lg-4 mt-3">
+        <div class="list-group">
+            <div class="list-group-item py-3 icon-block">
+                <img src="assets/icons/person-icon.png" alt="" class="icon-img">
+                <div class="pb-2 icon-rate">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">&quot; So happy, Nigerian Dev can teach like Henjo Code Academy <i style="color:rgb(0, 255, 21)" class="bi bi-star-fill"></i>&quot;</h5>
+                <p>In the vast tech landscape, it's heartening that a Nigerian Dev institution, Henjo Code Academy, can rival global giants with its top-tier teaching.</p>
+                <small class="off-white">Review by John Michael</small>
+            </div>
+    </div>
+   </div>
+   <div class="col-10 col-lg-4 mt-3">
+    <div class="list-group">
+        <div class="list-group-item py-3 icon-block ">
+            <img src="assets/icons/person-icon.png" alt="" class="icon-img">
+            <div class="pb-2 icon-rate">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <h5 class="mb-1">&quot;I thought I was a pro till i came in contact with this course <i style="color:rgb(0, 255, 21)" class="bi bi-person-fill"></i>&quot;</h5>
+            <p>Believing I was an expert, this course humbled me. It showcased depths I hadn't explored. Grateful for such transformative lessons from Henjo Code Academy.</p>
+            <small class="off-white">Review by Lawrence Ibe</small>
+        </div>
+</div>
+</div>
+    </div>
+    <button type="button" value="Show Layer" onclick="setVisibility('hidden', 'block');"; class="review-bt">view more</button>
+   <div id="hidden">
+
+    <div class="row justify-content-center my-5">
+        <div class="col-10 col-lg-4 mt-3">
+            <div class="list-group">
+                <div class="list-group-item py-3 icon-block">
+                    <img src="assets/icons/person-icon.png" alt="person" class="icon-img">
+                    <div class="pb-2 icon-rate">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <h5 class="mb-1">&quot;Henjo, my power in Modern Web Design Techniques<i style="color:rgb(0, 255, 21)" class="bi bi-heart-fill"></i>&quot;</h5>
+                    <p>I underestimated modern design's potential. Now, every webpage I craft resonates with elegance and functionality, thanks to Henjo Code Academy's insights.</p>
+                    <small class="off-white">Review by Kamsi Coman</small>
+                </div>
+        </div>
+       </div>
+       <div class="col-10 col-lg-4 mt-3">
+        <div class="list-group">
+            <div class="list-group-item py-3 icon-block">
+                <img src="assets/icons/person-icon.png" alt="" class="icon-img">
+                <div class="pb-2 icon-rate">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+                <h5 class="mb-1">&quot; From Basics to Advanced: My Dev Journey &quot;</h5>
+                <p>I believed I knew it all. Yet, from foundational code to advanced scripts, this course proved there's always more to master. Forever grateful to Henjo.</p>
+                <small class="off-white">Review by David Aja</small>
+            </div>
+    </div>
+   </div>
+   <div class="col-10 col-lg-4 mt-3">
+    <div class="list-group">
+        <div class="list-group-item py-3 icon-block ">
+            <img src="assets/icons/person-icon.png" alt="" class="icon-img">
+            <div class="pb-2 icon-rate">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <h5 class="mb-1">&quot; Unlocking the Secrets of Backend Development &quot;</h5>
+            <p>I focused mainly on the frontend until Henjo Code Academy revealed the backend's magic. Now, my projects are holistic, efficient, and truly next-level.</p>
+            <small class="off-white">Review by Mike O</small>
+        </div>
+</div>
+</div>
+
+    </div>
+    <button type="button" onclick="setVisibility('hidden');"; id="bt1" value="Show Layer" class="review-bt">view less</button>
+    </div>
+</section>
+
+<!--WOrking with forms-->
+<!--Form-control form-lable form-select input-group input-group-text-->
+<section id="contact" class="bg-dark">
+    <div class="conatiner-lg mx-3">
+        <div class="text-center text-light mt-5">
+            <h2>Get in Touch</h2>
+            <p class="lead">Do You Have Any Questions? fill out the form to contact us directly...</p>
+        </div>
+        <div class="row justify-content-center my-5 mx-1">
+            <div class="col-lg-6">
+                <form>
+                    <label for="email" class="form-label text-light">Email address : </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="e.g: michael@example.com">
+                    </div>
+                   
+
+                    <label for="name" class="form-label text-light">Name :</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="e.g: Michael Oni">
+                     </div>
+
+                    <label for="subject" class="form-label text-light">What is your question about?</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bi bi-patch-question-fill"></i>
+                        </span>
+                        <select name="subject" id="subject" class="form-select">
+                            <option value="pricing" selected>about pricing</option>
+                            <option value="course">about course</option>
+                            <option value="other">others</option>
+                        </select>
+                    </div>
+                    <div class=" form-floating mb-4 mt-5">
+                        <textarea name="query" class="form-control" id="query" style="height: 140px;" >
+                        </textarea>
+                        <label for="query">Your query</label>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title sidebar-label text-light">
+            Course content
+        </h5>
+        <button type="button" class="btn-close" style="background-color: rgb(255, 255, 255);" data-bs-dismiss="offcanvas" aria-label="Close" ></button>
+    </div>
+<div class="accordion align-items-center offcanvas-body" id="chapters">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-1">
+            <button class="accordion-button " style="color: white; background-color: black;" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-control="chapter-1">Chapter 1 - Your first webpage</button>
+        </h2>
+        <div id="chapter-1" class="accordion-collapse collapse"  aria-labelledby="heading-1" data-bs-parent="#chapters">
+            <div class="accordion-body ">
+                <p>Crafting an elegant website UI begins with a strong foundation in HTML, structuring content seamlessly. Paired with CSS, it's your canvas for vibrant visuals and responsive designs. Meticulous attention to details, from typography to spacing, ensures a delightful user experience. By prioritizing accessibility and intuitiveness, your site becomes more than just visuals—it's an interactive masterpiece. Embrace the endless possibilities of HTML and CSS, and let your creativity flourish</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-control="chapter-2">Chapter 2 - Mastering CSS</button>
+        </h2>
+        <div id="chapter-2" class="accordion-collapse collapse"  aria-labelledby="heading-2" data-bs-parent="#chapters">
+            <div class="accordion-body ">
+                <p>Dive deep into the world of CSS at Henjo Code Academy. Master the art of styling, from basic layouts to advanced animations. Every lesson is a step closer to crafting pixel-perfect web designs. With our hands-on projects and expert guidance, you'll become a CSS maestro. Join us and reshape the web, one stylesheet at a time.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-3">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-control="chapter-3">Chapter 3 - The Beauty of JavaScript</button>
+        </h2>
+        <div id="chapter-3" class="accordion-collapse collapse"  aria-labelledby="heading-3" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Discover 'The Beauty of JavaScript.' Unleash the power of this dynamic language to create interactive and engaging web experiences. From building dynamic web pages to crafting responsive web apps, JavaScript is your key to unlocking endless possibilities. Join us on a journey to appreciate the elegance and versatility of JavaScript, and let your code bring beauty to the web.</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-4">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-control="chapter-4">Chapter 4 - Work Lazy With Templates</button>
+        </h2>
+        <div id="chapter-4" class="accordion-collapse collapse"  aria-labelledby="heading-4" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Unlock efficiency with 'Work Lazy with Website Templates'. Dive into a world where stunning designs are just a click away, ready to customize. Bypass hours of coding, and choose from myriad professional templates that fit your vision. Let templates do the heavy lifting, ensuring rapid deployment without compromising aesthetics. With website templates, you achieve more by doing less.</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-5">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="true" aria-control="chapter-5">Chapter 5 - Frameworks</button>
+        </h2>
+        <div id="chapter-5" class="accordion-collapse collapse"  aria-labelledby="heading-5" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Step up your web development game with 'Working with Frameworks'. Dive into the streamlined worlds of React for interactive UIs, Bootstrap for responsive designs, Vue for progressive web apps, and Django for robust backends. These frameworks simplify complexities, ensuring efficient, maintainable, and scalable projects. Embrace the power of frameworks and turn intricate challenges into straightforward solutions.</p>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-6">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-6" aria-expanded="true" aria-control="chapter-6">Chapter 6 - Intro To Database</button>
+        </h2>
+        <div id="chapter-6" class="accordion-collapse collapse"  aria-labelledby="heading-6" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Unlock the world of data with our 'Introduction to Database'. Dive deep into the realms of SQL for structured querying, MongoDB for flexible NoSQL storage, and PostgreSQL for robust relational data management. Understanding databases is the cornerstone of dynamic web applications, ensuring efficient storage and seamless data retrieval. Begin your journey into the heart of web applications and harness the power of data at your fingertips.</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-7">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-7" aria-expanded="true" aria-control="chapter-7">Chapter 7 - User Authentification</button>
+        </h2>
+        <div id="chapter-7" class="accordion-collapse collapse"  aria-labelledby="heading-7" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>At Henjo, we demystify 'User Authentication.' Learn the ins and outs of secure login systems, protecting user data with encryption, and implementing OAuth for seamless access control. In our comprehensive course, you'll gain the skills to fortify your applications against unauthorized access. Join Henjo and empower your projects with top-notch user authentication practices</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-8">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-8" aria-expanded="true" aria-control="chapter-8">Chapter 8 -Learn Php for Backend Dev</button>
+        </h2>
+        <div id="chapter-8" class="accordion-collapse collapse"  aria-labelledby="heading-8" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Embark on a journey to master 'Learning PHP for Backend Development'. Explore the power of PHP, the scripting language that drives dynamic web applications. Our course takes you through the fundamentals, from handling user input to interacting with databases. With PHP, you'll unlock the ability to create feature-rich backends that power the web. Enroll now and pave the way to becoming a proficient backend developer.</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-9">
+            <button class="accordion-button" style="color: white; background-color: black;"  data-bs-toggle="collapse" data-bs-target="#chapter-9" aria-expanded="true" aria-control="chapter-9">Chapter 9 - Mastering SQL</button>
+        </h2>
+        <div id="chapter-9" class="accordion-collapse collapse"  aria-labelledby="heading-9" data-bs-parent="#chapters">
+            <div class="accordion-body">
+                <p>Henjo brings you into the world of data management with SQL. Structured Query Language (SQL) is the universal language of databases, enabling you to store, retrieve, and manipulate data effortlessly. From crafting complex queries to designing efficient database schemas, SQL empowers you to harness the full potential of your data. Join us in exploring the art and science of SQL, and unlock the keys to managing information effectively.</p>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</section>
+<section class="bg- footer">
+    <div class="container-lg justify-content-center">
+        <div class="row mt-3" >
+            <div class=" col-lg-4 mt-3 d-none d-md-block">
+                <a href="#" class="navbar-brand">
+                    <span class="container-lg">    
+                        <img src="assets/icons/henjo_logo_icon.png" alt="logo" class="logo_big foot-img">  
+                    </span>
+                    <h5 class="mx-4 my-2 text-light">Code Academy</h5>
+                    <p class="mx-4 text-secondary">empowering the leaders of tomorrow</p>
+                </a>
+            </div>
+            <div class=" col-lg-4 mt-3">
+                <h5 class="footer-header text-light" style="text-align: center;">
+                    Quick Links
+                </h5>
+                    <ul >
+                        <li class="q-link"><a href="#" class="foot-link "><img src="assets/icons/html-logo_lfmuid.svg" alt="" height="20px" width="20px">henJo HTML Course</a></li> 
+                        <li class="q-link"> <a href="#" class="foot-link"><img src="assets/icons/css-removebg-preview.png" alt="" height="20px" width="20px">henJo CSS Course</a></li> 
+                        <li class="q-link"> <a href="#" class="foot-link"><img src="assets/icons/js_ye-removebg-preview.png" alt="" height="20px" width="20px">henJo Javascript Course</a></li> 
+                        <li class="q-link"> <a href="#" class="foot-link"><img src="assets/icons/react_ye-removebg-preview.png" alt="" height="20px" width="20px">henJo React Course</a></li> 
+                        <li class="q-link"> <a href="#" class="foot-link"><img src="assets/icons/Screenshot__504_-removebg-preview.png" alt="" height="20px" width="20px">henJo Bootstrap Course</a></li> 
+                        <li class="q-link"> <a href="#" class="foot-link"><img src="assets/icons/PHP-logo.svg-removebg-preview.png" alt="" height="20px" width="20px">henJo Php Course</a></li>
+                    </ul>
+                
+
+            </div>
+            <div class="col-12 col-lg-4 mt-3" >
+                <h5 class="text-light text-center">Follow us</h5>
+                <ul style="border: 4px solid rgb(53, 52, 52);" class="mx-5">
+                    <li class="s-item"><a href="#"><i class="bi bi-youtube social"></i></a> 
+                        <a href="#"><i class="bi bi-facebook social"></i></a>
+                        <a href="#"><i class="bi bi-telegram social"></i></a>
+                    </li>
+                    <li class="s-item"><a href="#"><i class="bi bi-instagram social"></i></a> 
+                        <a href="#"><i class="bi bi-twitter social"></i></a>
+                        <a href="#"><i class="bi bi-github social"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div><hr>
+        <div class="row">
+            <div class="copy text-center">
+                all rights reserved <br>&copy; henJO 2023
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+    
+        function setVisibility(hidden){
+            if(document.getElementById('bt1').value=='Hide Layer'){
+                document.getElementById('bt1').value=='Show Layer';
+                document.getElementById(hidden).style.display='none';
+            }else{
+                document.getElementById('bt1').Value = 'Hide layer';
+                document.getElementById(hidden).style.display = 'inline';
+            }
+        }
+    </script>
+
+</body>
+</html>

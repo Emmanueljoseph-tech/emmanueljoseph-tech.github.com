@@ -1,0 +1,199 @@
+section{
+    padding: 60px 0;
+}
+.logo_big{
+    height:50px;
+    width:100px;
+}
+.logo_small{
+    height:30px;
+    width:80px;
+}
+nav{
+    background-color: rgb(11, 10, 10);
+    height: 80px;
+}
+#intro{
+    background-color: rgb(36, 35, 35);
+    height: 70%;
+    padding-top:8%;
+}
+#pricing{
+    background-color: rgb(33, 32, 32);
+}
+#topics{
+    background-color: rgb(36, 31, 31);
+}
+.accordion-item{
+    background-color: rgb(41, 39, 39);
+    color: bisque;
+}
+.accordion-button{
+    background-color: rgb(41, 39, 39);
+    color: bisque;
+}
+.accordion-button:active{
+    background-color: blue;
+}
+.icon-img{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.myCard{
+    border: 2px dashed goldenrod;
+}
+@media screen and (min-width: 800px){
+    .myCard:hover{
+    
+        transform: scale(1.1);
+    }
+    
+}
+.myCard_p{
+    color: rgb(189, 187, 187);
+    margin: 18px;
+}
+.myCard h3{
+    color: white;
+    margin: 18px;
+}
+.my-btn{
+    background: rgb(211, 57, 108);
+    color: white;
+    margin: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:none;
+}
+.my-btn:hover{
+    background-color: white;
+    border:none;
+    color:rgb(211, 57, 108);
+}
+.price{
+    color: goldenrod;
+}
+.mostWanted{
+    border-color: goldenrod;
+}
+.golden{
+    border-color:goldenrod ;
+    color:white;
+}
+.golden:hover{
+    background-color: goldenrod;
+    color:white ;
+    border:none;
+}
+.spaced{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my-btn2{
+    background-color:transparent;
+    margin-right: 15px;
+    border:2px dotted gray;
+    color: gray;
+}
+.big-head{
+    font-size:50px;
+    font-weight: bold;
+}
+.myCard_a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.review-block{
+    background-color:rgb(33, 30, 30) ;
+   
+}
+.icon-block{
+    background-color: rgb(33, 32, 32);
+    border: 2px solid goldenrod;
+}
+.icon-img{
+    border:2px solid goldenrod;
+    border-radius: 100%;
+}
+.icon-block p{
+    color:rgb(164, 159, 159);
+}
+.icon-block h5{
+    color:ffffff;
+}
+
+.icon-rate{
+    color: goldenrod;
+    padding: 20px 0 20px 0;
+}
+.off-white{
+    color: rgb(174, 178, 181);
+}
+.offcanvas{
+    background-color: rgb(39, 39, 39);;
+}
+.offcanvas-body{
+    background-color: goldenrod;
+}
+
+.accordion-button{
+    color:white;
+}
+.accordion-button:active{
+    background-color:goldenrod;
+}
+body{
+    background-color: black;
+}
+.footer a{
+    text-decoration: none;
+    margin:5px;
+}
+.footer li{
+    list-style-type:none;
+}
+.foot-link{
+    font-size:12px;
+    color:rgb(147, 153, 153);
+}
+.footer p{
+    font-size: 14px;
+}
+.foot-img{
+    height: 50px;
+    width:80px;
+}
+.social{
+    color: goldenrod;
+}
+.review-bt{
+    background: transparent;
+    color:aliceblue;
+}
+.s-item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.copy{
+    color: rgb(107, 110, 112);
+    font-size: 13px;
+}
+.q-link{
+    text-align:center;
+    display: inline-block;
+}
+@media screen and (max-width: 800px) {
+    .navbar-nav{
+        background-color: rgb(19, 18, 18);
+    }    
+    
+}
+@media screen and (max-width: 800px) {
+    .pcp{
+        text-align: center;
+    }
+}
